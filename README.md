@@ -3,9 +3,18 @@
 I have used mnist subset (images of handwritten digits from 0 to 9). The dataset is stored in a JSON-formated file mnist_subset.json. I developed the following supervised learning algorithms in Python, using only NumPy and SciPy packages:
 
 • Logistic Regression model for binarized MNIST dataset using gradient descent to classify hand-written digits with an accuracy of 0.83 (in Logistic.py)
-	•Run logistic_binary.sh
-	•Output will be in logistic_binary.out
+	>Run logistic_binary.sh
+	>Output will be in logistic_binary.out
 
 • Multi-class classification using one v/s rest classification and multinomial logistic regression function on MNIST dataset and achieved accuracy of 0.83 and 0.89 respectively (in Logistic.py)
-	• Run logistic_multiclass.sh
-	• Output will be in logistic_multiclass.out
+	> Run logistic_multiclass.sh
+	> Output will be in logistic_multiclass.out
+
+• Multi-Layer Perceptron (in dnn_mlp.py and dnn_misc.py) for 10-class classification problem, with various combinations of dropout rate. The network structure is input --> linear --> relu --> dropout --> linear --> softmax_cross_entropy loss <br />
+<b>Run</b> python3 dnn_mlp.py --dropout_rate 0.5
+    
+
+• Convoluted Neural Network for 10-class classification problem, with various combinations of learning rate, momentum, weight decay and dropout rate (in dnn_cnn.py and dnn_misc.py). The network structure is input --> convolution --> relu --> max pooling --> flatten --> dropout --> linear --> softmax_cross_entropy loss
+<br /><b>Run</b> python3 dnn_cnn.py --alpha 0.9 <br/><br/>
+Further extended this to forma deeper architecture (CNN2 in dnn_cnn_2.py and dnn_misc.py). The network structure is input --> convolution --> relu --> max pooling --> convolution --> relu --> max pooling --> flatten --> dropout --> linear --> softmax_cross_entropy loss<br />
+<b>Run</b> python3 dnn_cnn_2.py --alpha 0.9
