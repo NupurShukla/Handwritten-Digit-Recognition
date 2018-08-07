@@ -1,5 +1,6 @@
 # Handwritten-Digit-Recognition
 
+This work was done as part of CSCI-567 (Machine Learning) coursework at USC.
 I have used mnist subset (images of handwritten digits from 0 to 9). The dataset is stored in a JSON-formated file mnist_subset.json. I developed the following supervised learning algorithms in Python, using only NumPy and SciPy packages:
 
 • Logistic Regression model for binarized MNIST dataset using gradient descent to classify hand-written digits with an accuracy of 0.83 (in Logistic.py)
