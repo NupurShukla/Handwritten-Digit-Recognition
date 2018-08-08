@@ -19,3 +19,6 @@ I have used mnist subset (images of handwritten digits from 0 to 9). The dataset
 <br /><b>Run</b> python3 dnn_cnn.py --alpha 0.9 <br/><br/>
 Further extended this to forma deeper architecture (CNN2 in dnn_cnn_2.py and dnn_misc.py). The network structure is input --> convolution --> relu --> max pooling --> convolution --> relu --> max pooling --> flatten --> dropout --> linear --> softmax_cross_entropy loss<br />
 <b>Run</b> python3 dnn_cnn_2.py --alpha 0.9
+
+• Adaboost and Logitboost, both with accuracies 0.95, on binarized MNIST data (in boosting.py and boosting_test.py) <br />
+<b>Run</b> python3 boosting_test.py
