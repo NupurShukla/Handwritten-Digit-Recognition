@@ -22,3 +22,6 @@ Further extended this to forma deeper architecture (CNN2 in dnn_cnn_2.py and dnn
 
 • Adaboost and Logitboost, both with accuracies 0.95, on binarized MNIST data (in boosting.py and boosting_test.py) <br />
 <b>Run</b> python3 boosting_test.py
+
+• Linear support vector machine (SVM) using Pegasos algorithm for binary classification, giving an accuracy of 0.82  <br />
+<b>Run</b> python3 pegasos.py
