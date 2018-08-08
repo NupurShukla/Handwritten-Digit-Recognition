@@ -25,3 +25,9 @@ Further extended this to forma deeper architecture (CNN2 in dnn_cnn_2.py and dnn
 
 • Linear support vector machine (SVM) using Pegasos algorithm for binary classification, giving an accuracy of 0.82  <br />
 <b>Run</b> python3 pegasos.py
+
+• Principal Component Analysis (PCA) for image compression (black and white images)
+<b>Run</b> python3 pca.py
+This will generate pca_output.txt
+
+
